@@ -1,0 +1,14 @@
+# Python virtualenv
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+
+# Raw chat exports — keep off GitHub
+input/*/chat.txt
+input/*/chat.md
+
+# Temp files
+_*.py
+*.pyc
+__pycache__/
