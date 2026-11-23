@@ -25,6 +25,11 @@
 @media(max-width:650px){body{padding:14px 10px 26px}.masthead{display:block}.edition{text-align:left;margin-top:16px}.metrics{grid-template-columns:repeat(2,1fr)}.metric:last-child{grid-column:span 2}.toolbar{gap:7px}.view-switch{width:100%;justify-content:space-between}.view-switch button{flex:1;padding:9px 5px}.select{flex:1;max-width:none}.stage-head{display:block}.key{justify-content:flex-start;margin-top:10px}.canvas{min-height:480px;height:62vh}.side{padding:16px}.activity{grid-template-columns:1fr}.activity svg{height:52px}.footnote{display:block}}
 
 /* ── Memory Gallery ───────────────────────────────────────────── */
+/* Brighter graph nodes so circles are visible against dark background */
+.graph-node circle{fill:#2d5a66 !important;stroke:#9ec8cc !important;stroke-width:2 !important}
+.graph-node.primary circle{fill:#6b4f28 !important;stroke:var(--gold) !important;stroke-width:2.8 !important}
+.graph-node.selected circle{stroke:#fff3d6 !important;stroke-width:3.5 !important}
+.graph-node text{fill:#e5e7dc !important;paint-order:stroke;stroke:#1a2b34;stroke-width:3px}
 .gallery-view{padding:16px 18px 24px}
 .gallery-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
 .gallery-toolbar select{background:#0f1b22;color:#dce5de;border:1px solid #30454d;border-radius:9px;padding:8px 10px;font:12px inherit}
@@ -82,7 +87,7 @@
     <div>
       <div class="eyebrow">JGVV Syndicate · The living archive</div>
       <h1 class="mast-title">The <span>Atlas</span> of Us</h1>
-      <div class="subline">Those that were in JGVV and hopefully finished class XII in 1993<br>A spatial history of the people, moments and connections.</div>
+      <div class="subline">One school. Many lives. One unbroken thread.<br>A spatial history of the people, moments and friendships that still find their way back.</div>
     </div>
     <div class="edition"><strong>HISTOMAP · EDITION 01</strong><small>Built from the group conversation<br>and the school-memory archive<br>23 November 2026</small></div>
   </header>
@@ -111,7 +116,7 @@
     </aside>
   </main>
   <div class="footnote"><span>Source base: WhatsApp export and JGVV school-memory HTML archive.</span><span>Search and zoom are local to this page. D3 v7 is bundled inline. This archive is fully self-contained.</span></div>
-  <div class="footer-quote">“The WhatsApp thread goes endless. This is just a synopsis of what one of the AI engines found relevant!”</div>
+  <div class="footer-quote">“We didn't pick up where we left off. We discovered how much life had happened in between.”</div>
   <div class="footer-sub">And we're still here · Friends for life</div>
 </div>
 <script>
